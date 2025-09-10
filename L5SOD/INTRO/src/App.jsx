@@ -1,4 +1,6 @@
 import './main'
+import './Components/Card'
+import Card from './Components/Card'
 // import './index.css'
 // import imageOne from '../public/1.jpg'
 // function App() {
@@ -53,19 +55,32 @@ import './main'
 
 // export default App
 
-const users = [
-  {id: 1, name: "Gisubizo", age: 41},
-  {id: 2, name: "James", age: 48},
-  {id: 3, name: "Jibu", age: 31}
-]
+// const users = [
+//   {id: 1, name: "Gisubizo", age: 41},
+//   {id: 2, name: "James", age: 48},
+//   {id: 3, name: "Jibu", age: 31}
+// ]
 
-function App(user){
-  return(
+// function App(user){
+//   return(
+//     <>
+//     {users.map(user =>
+//     <li>{user.name}
+//       </li>)}
+//     </>
+//   )
+// }
+
+
+
+// 
+
+function App() {
+  return (
     <>
-    {users.map(user =>
-    <li>{user.name}
-      </li>)}
+    <Card />
     </>
+    
   )
 }
 
