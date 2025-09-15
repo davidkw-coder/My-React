@@ -74,14 +74,25 @@ import Card from './Components/Card'
 
 
 // 
-
+import React from 'react'
+import { Routes, Route} from "react-router-dom"
+import Navbar from './Components/navbar'
+import Home from './Pages/Home'
+import About from './Pages/About'
 function App() {
   return (
     <>
-    <Card />
+    {/* <Router> */}
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="About" element={<About />}/>
+    </Routes>
+    {/* </Router> */}
+
     </>
     
-  )
+  );
 }
 
 export default App
