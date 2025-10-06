@@ -8,7 +8,12 @@ const Home = () => {
     const fetchPosts = async () => {
       try {
         const response = await axios.get("https://blog-app-b961.onrender.com/api/posts/");
-        setData(response.data);
+
+
+        setTimeout(() => {
+          setData(response.data);
+          
+        }, 5000)
         console.log(response.data);
       } catch (error) {
         console.log(error);
@@ -30,7 +35,7 @@ const Home = () => {
             </div>
           ))
         ) : (
-          <p>Loading posts...</p>
+          <p>Posts...</p>
         )}
       </div>
     </>
