@@ -6,7 +6,7 @@ export default function Navbar() {
         <div>
             <h1 className='font-bold text-[40px]'>Logo</h1>
         </div>
-        <div className='my-5'>
+        <div className='my-5 flex gap-8'>
             <button className='font-semibold text-[20px] hover:text-gray-600'>Home</button>
             <button className='font-semibold text-[20px] hover:text-gray-600'>About Us</button>
             <button className='font-semibold text-[20px] hover:text-gray-600'>Contact</button>
