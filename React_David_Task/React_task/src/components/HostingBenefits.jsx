@@ -44,12 +44,12 @@ export default function HostingBenefits() {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-4xl">
         {benefits.map((item, index) => (
           <div
             key={index}
-            className={`bg-white rounded-sm transition duration-300 p-10 text-center border border-gray-100 flex flex-col items-center justify-between ${
-              index === 0 || index === 3 ? "h-[420px]" : "h-[360px]"
+            className={`bg-white rounded-sm transition duration-300 p-14 text-center border border-gray-100 flex flex-col items-center justify-between ${
+              index === 0 || index === 3 ? "h-[520px]" : "h-[460px]"
             }`}
           >
             {/* Icon */}

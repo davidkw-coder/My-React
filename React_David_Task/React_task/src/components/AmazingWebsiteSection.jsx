@@ -2,15 +2,15 @@ import React from "react";
 
 const AmazingWebsiteSection = () => {
   return (
-    <section className="relative flex justify-center items-center bg-gray-100 py-16 overflow-hidden">
+    <section className="relative flex justify-center items-center h-full bg-gray-100 py-32 overflow-hidden">
       {/* Long green rectangle in background */}
-      <div className="absolute w-[480px] h-[1500px] bg-[#359756] top-0 z-0"></div>
+      <div className="absolute w-[480px] h-[2500px] bg-[#359756] top-0 z-0"></div>
 
       {/* Green circle */}
-      <div className="absolute left-[11%] top-[15%] w-60 h-60 bg-[#8ae4a8] rounded-full z-50"></div>
+      <div className="absolute left-[12%] top-[19%] w-50 h-50 bg-[#8ae4a8] rounded-full z-50"></div>
 
       {/* Illustration image */}
-      <div className="relative z-20">
+      <div className="relative z-20 mt-[-60px]">
         <img
           src="/more.png"
           alt="Create Website Illustration"
@@ -19,7 +19,7 @@ const AmazingWebsiteSection = () => {
       </div>
 
       {/* White card in front of the image */}
-      <div className="absolute bg-white rounded-xl shadow-lg max-w-xl md:max-w-xl h-100 content-center p-6 md:p-8 z-30 right-[10%] top-[99%] transform -translate-y-1/2">
+      <div className="absolute bg-white rounded-xl shadow-lg max-w-xl md:max-w-xl h-auto content-center p-8 md:p-10 z-30 right-[10%] bottom-[-100px] lg:bottom-[-60px]">
         <h2 className="text-xl md:text-2xl font-bold text-green-700 mb-3">
           Create Amazing Website
         </h2>
