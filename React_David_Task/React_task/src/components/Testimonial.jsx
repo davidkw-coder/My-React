@@ -42,23 +42,23 @@ const teamImage = "https://i.ibb.co/6B0X8vB/team-image.png"; // Replace with the
 
 export default function Testimonial() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16 text-center">
-      <h3 className="text-sm uppercase tracking-widest text-gray-500">TESTIMONIALS</h3>
-      <h2 className="text-3xl md:text-4xl font-extrabold text-green-700 mt-2 mb-4">
+    <div className="max-w-full mx-auto px-8 py-20 text-center">
+      <h3 className="text-lg uppercase tracking-widest text-gray-500">TESTIMONIALS</h3>
+      <h2 className="text-4xl md:text-5xl font-extrabold text-green-700 mt-3 mb-6">
         What Clients Say
       </h2>
-      <p className="max-w-2xl mx-auto text-gray-700 mb-16">
+      <p className="max-w-4xl mx-auto text-xl text-gray-700 mb-20">
         We place huge value on strong relationships and have seen the benefit they bring to our business.
         Customer feedback is vital in helping us to get it right.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-4">
         {testimonials.map(({ image, text, name, role }) => (
           <div
             key={name}
-            className="bg-gray-100 rounded-xl p-6 flex flex-col items-center text-gray-700"
+            className="bg-gray-100 rounded-xl p-8 flex flex-col items-center text-gray-700 h-full"
           >
-            <div className="w-24 h-24 mb-6 rounded-full ring-4 ring-green-600 overflow-hidden">
+            <div className="w-32 h-32 mb-8 rounded-full ring-4 ring-green-600 overflow-hidden">
               <img
                 src={image}
                 alt={name}
@@ -66,9 +66,9 @@ export default function Testimonial() {
                 loading="lazy"
               />
             </div>
-            <p className="mb-6 text-center text-sm leading-relaxed">{text}</p>
-            <h4 className="font-bold text-green-700 text-lg">{name}</h4>
-            <p className="text-xs tracking-widest">{role}</p>
+            <p className="mb-8 text-center text-base leading-relaxed flex-grow">{text}</p>
+            <h4 className="font-bold text-green-700 text-xl">{name}</h4>
+            <p className="text-sm tracking-widest">{role}</p>
           </div>
         ))}
       </div>
