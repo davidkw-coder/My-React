@@ -5,7 +5,7 @@ const testimonials = [
     name: "Nat Reynolds",
     role: "Chief Accountant",
     image:
-      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
+      "/testimonial/p5.jpg",
     text: `Vitae suscipit tellus mauris a diam maecenas sed enim ut.
             Mauris augue neque gravida in fermentum. Praesent semper
             feugiat nibh sed pulvinar pro.`,
@@ -14,7 +14,7 @@ const testimonials = [
     name: "Celia Almeda",
     role: "Secretary",
     image:
-      "https://images.unsplash.com/photo-1508214751197-f66f2fc2f6d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
+      "/testimonial/p3.jpg",
     text: `Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam
             elementum pulvinar etiam. Urna porttitor rhoncus dolor purus
             non enim praesent elementum.`,
@@ -23,7 +23,7 @@ const testimonials = [
     name: "Bob Roberts",
     role: "Sales Manager",
     image:
-      "https://images.unsplash.com/photo-1508214751200-3d47a20e3b04?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
+      "/testimonial/p2.jpg",
     text: `Mauris augue neque gravida in fermentum. Praesent semper
             feugiat nibh sed pulvinar proin. Nibh nisl dictumst vestibulum
             rhoncus est pellentesque elit.`,
@@ -32,13 +32,12 @@ const testimonials = [
     name: "Mattie Smith",
     role: "Accountant-auditor",
     image:
-      "https://images.unsplash.com/photo-1508214751203-14b6c7f3aadb?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
+      "/testimonial/p1.jpg",
     text: `Nisl condimentum id venenatis a gravida in fermentum. Praesent
             semper feugiat nibh sed pulvinar proin. Nibh nisl condimentum.`,
   },
 ];
 
-const teamImage = "https://i.ibb.co/6B0X8vB/team-image.png"; // Replace with the actual image URL from user image
 
 export default function Testimonial() {
   return (

@@ -5,6 +5,7 @@ import HostingBenefits from './components/HostingBenefits';
 import AmazingWebsiteSection from './components/AmazingWebsiteSection';
 import Testimonial from './components/Testimonial';
 import Purchase from './components/Purchase';
+import GetStarted from './components/GetStarted';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <AmazingWebsiteSection />
         <Testimonial />
         <Purchase />
+        <GetStarted />
     </div>
   )
 }
